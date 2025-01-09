@@ -32,8 +32,6 @@ fn SysTick() {
         CYCLES.load(Ordering::SeqCst).wrapping_add(1),
         Ordering::SeqCst,
     );
-    #[cfg(feature = "defmt")]
-    defmt::info!("SysTick");
 }
 
 #[cfg(feature = "defmt")]
