@@ -4,8 +4,7 @@ peripheral.
 # Usage
 Construct a new [`Timer`] instance using the
 [`SysTick`](cortex_m::peripheral::SYST) peripheral. The timer can then be
-used to create [timeouts](Timeout), [tickers](Ticker), and
-[trackers](Tracker).
+used to create timeouts, tickers, and trackers.
 
 Enable the `defmt` feature to automatically implement the `defmt` timestamp
 feature, as well as derive [`defmt::Format`](https://docs.rs/defmt/latest/defmt/trait.Format.html) for all relevant types.

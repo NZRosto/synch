@@ -59,7 +59,8 @@ fn calc_ticks() -> u64 {
 /// A timer that can measure time, allowing you to create timeouts and tickers.
 /// The timer instance implements `Clone` and `Copy`, so once a timer has been
 /// constructed with a valid `SysTick` peripheral, it can be cloned and passed
-/// around freely.
+/// around freely. The timer can then be used to create [timeouts](Timeout),
+/// [tickers](Ticker), and [trackers](Tracker).
 ///
 /// All functions on the timer are non-blocking (including implementations of
 /// embedded-hal-async [`DelayNs`](embedded_hal_async::delay::DelayNs)). In
