@@ -1,6 +1,6 @@
 [package]
 name = "synch"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 description = "A basic asynchronous timer implementation that uses the cortex-m SysTick peripheral"
@@ -19,7 +19,7 @@ rust.missing-docs = "warn"
 [dependencies]
 cortex-m = "0.7"
 cortex-m-rt = "0.7"
-defmt = { version = "0.3", optional = true }
+defmt = { version = "1", optional = true }
 embedded-hal-async = "1"
 fugit = "0.3"
 woven = "0.1"
